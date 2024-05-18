@@ -131,6 +131,7 @@ class Config:
             "modern-installation": True,
             "parallel": True,
             "max-workers": None,
+            "max-retries": 0,
             "no-binary": None,
             "only-binary": None,
         },
