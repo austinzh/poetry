@@ -127,11 +127,13 @@ class Config:
         "experimental": {
             "system-git-client": False,
         },
+        "requests": {
+            "max-retries": 0,
+        },
         "installer": {
             "modern-installation": True,
             "parallel": True,
             "max-workers": None,
-            "max-retries": 0,
             "no-binary": None,
             "only-binary": None,
         },
@@ -321,7 +323,7 @@ class Config:
 
         if name in {
             "installer.max-workers",
-            "installer.max-retries",
+            "requests.max-retries",
         }:
             return int_normalizer
 
